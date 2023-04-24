@@ -165,6 +165,7 @@ const Login = ({
   const {} = route.params || {};
   useEffect(() => {
     dispatch(loginRequest());
+    dispatch(loginRequest());
   }, []);
   return <Stack.Navigator headerMode="none">
       <Stack.Screen name="LoginScreen" component={LoginScreen} initialParams={{
